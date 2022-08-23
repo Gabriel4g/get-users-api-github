@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API github</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main id="container">
+        <img src="./assets/ilustration.png" alt="ilustration" class="ilustration">
+        <h1 id="title">
+            Procure usuarios do GitHub
+        </h1>
+
+        <form action="">
+            <input type="text" id="user-input" placeholder="Digite um usuario" autocomplete="off">
+            <button id="btn-buscar">
+                Procurar
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-search" width="44"
+                    height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M8 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h5.697" />
+                    <path d="M18 12v-5a2 2 0 0 0 -2 -2h-2" />
+                    <rect x="8" y="3" width="6" height="4" rx="2" />
+                    <path d="M8 11h4" />
+                    <path d="M8 15h3" />
+                    <circle cx="16.5" cy="17.5" r="2.5" />
+                    <path d="M18.5 19.5l2.5 2.5" />
+                </svg>
+            </button>
+        </form>
+
+        <div id="usuarios">
+            <img src="" id="img-user">
+            
+            <h1 class="username infos-style" style="font-size: 2.5rem"></h1>
+            <h1 class="followers infos-style"></h1>
+            <h1 class="following infos-style"></h1>
+            <h1 class="location infos-style"></h1>
+            <h1 class="name infos-style"></h1>
+            <h1 class="repos infos-style"></h1>
+            <h1 class="type infos-style"></h1>
+            <a href="#" class="url infos-style"></a>
+            <h1 class="Twitter infos-style"></h1>
+            <h1 class="email infos-style"></h1>
+        </div>
+    </main>
+
+    <script src="./js/main.js">
+    </script>
+</body>
+
+</html>

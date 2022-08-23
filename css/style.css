@@ -28,6 +28,8 @@ main {
 
 form {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 95%;
     flex-direction: column;
     gap: 1rem;

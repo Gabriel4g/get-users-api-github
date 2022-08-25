@@ -1,5 +1,6 @@
-# Get users from Github
-### Aplicação que busca usuarios do Github e mostra as informações. <br> => Consumindo a API do Github
+# 🧑‍💻 Busca de usuarios
+
+### Aplicação que busca usuarios do Github e mostra as informações do perfil. <br> Ultilizei a API do Github ⭐
 
 <hr>
 

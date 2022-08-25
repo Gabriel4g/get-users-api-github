@@ -1,6 +1,8 @@
-# 🧑‍💻 Busca de usuarios
+# <p align="center">🧑‍💻 Busca de usuarios
 
-### Aplicação que busca usuarios do Github e mostra as informações do perfil. <br> Ultilizei a API do Github ⭐
+#### <p align="center"> <a href="https://gabriel4g.github.io/search-users-from-github">🏠 Acesse o projeto<a/></p>
+
+### <p align="center">Aplicação que busca usuarios do Github e mostra as informações do perfil. <br> Ultilizei a API do Github ⭐</p>
 
 <hr>
 

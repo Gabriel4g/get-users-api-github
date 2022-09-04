@@ -120,6 +120,7 @@ main #usuarios header {
 
 .content-account .name {
     font-size: 23px;
+    text-align: center;
 }
 
 .content-account .username {
@@ -198,7 +199,6 @@ main #usuarios header {
 
     main #usuarios header .name{
         font-size: 30px;
-        text-align: center;
     }
 
     #usuarios header .username {

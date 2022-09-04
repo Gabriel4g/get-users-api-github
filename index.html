@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API github</title>
+    <title>Busca de usuarios do github</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,18 +39,88 @@
         </form>
 
         <div id="usuarios">
-            <img src="" id="img-user">
-            
-            <h1 class="username infos-style" style="font-size: 2.5rem"></h1>
+            <header>
+                <img src="" id="img-user">
+
+                <div class="content-account">
+                    <h1 class="name infos-style"></h1>
+                    <h2 class="username infos-style"></h2>
+                    <p class="bio infos-style"></p>
+                </div>
+            </header>
+
+            <div class="info-account">
+                <div class="content-repos">
+                    <p class="text">Repos</p>
+                    <h2 class="repos infos-style"></h2>
+                </div>
+
+                <div class="content-followers">
+                    <p class="text">Followers</p>
+                    <h2 class="followers infos-style"></h2>
+                </div>
+
+                <div class="content-following">
+                    <p class="text">Following</p>
+                    <h2 class="following infos-style"></h2>
+                </div>
+            </div>
+
+            <div class="content-links">
+                <span class="links">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="25" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                      </svg>
+
+                      <p class="location infos-style"></p>
+                </span>
+
+                <span class="links">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="25" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                        <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                      </svg>
+
+                      <a href="#" class="url infos-style"></a>
+                </span>
+
+                <span class="links">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="25" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                      </svg>
+
+                      <p class="Twitter infos-style"></p>
+                </span>
+
+                <span class="links">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-codesandbox" width="25" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 7.5v9l-4 2.25l-4 2.25l-4 -2.25l-4 -2.25v-9l4 -2.25l4 -2.25l4 2.25z" />
+                        <path d="M12 12l4 -2.25l4 -2.25" />
+                        <line x1="12" y1="12" x2="12" y2="21" />
+                        <path d="M12 12l-4 -2.25l-4 -2.25" />
+                        <path d="M20 12l-4 2v4.75" />
+                        <path d="M4 12l4 2l0 4.75" />
+                        <path d="M8 5.25l4 2.25l4 -2.25" />
+                      </svg>
+
+                      <p class="company infos-style"></p>
+                </span>
+            </div>
+            <!-- <h1 class="username infos-style" style="font-size: 2.5rem"></h1>
             <h1 class="followers infos-style"></h1>
-            <h1 class="following infos-style"></h1>
+            
             <h1 class="location infos-style"></h1>
             <h1 class="name infos-style"></h1>
             <h1 class="repos infos-style"></h1>
             <h1 class="type infos-style"></h1>
             <a href="#" class="url infos-style"></a>
             <h1 class="Twitter infos-style"></h1>
-            <h1 class="email infos-style"></h1>
+            <h1 class="email infos-style"></h1> -->
         </div>
     </main>
 

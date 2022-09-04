@@ -11,11 +11,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background: #140530f1;
+    background: #141C2F;
 }
 
 img {
     max-width: 90%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: auto;
 }
 
 main {
@@ -26,7 +32,7 @@ main {
     max-width: 600px;
 }
 
-form {
+main form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +46,7 @@ main .ilustration {
     height: 30rem;
 }
 
-#title {
+main #title {
     display: flex;
     gap: 1rem;
     color: #fff;
@@ -49,7 +55,7 @@ main .ilustration {
     text-align: center;
 }
 
-#user-input {
+main #user-input {
     font-size: 2rem;
     height: 4.5rem;
     border: none;
@@ -60,7 +66,7 @@ main .ilustration {
     border-radius: 5px;
 }
 
-#btn-buscar {
+main #btn-buscar {
     font-size: 2.5rem;
     height: 4.5rem;
     border-radius: 5px;
@@ -75,39 +81,145 @@ main .ilustration {
     background: rgb(46, 194, 41);
 }
 
-#usuarios {
+main #usuarios {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 95%;
+    height: auto;
+    gap: 2.5rem;
     border-radius: 5px;
-    background: #fff;
-    padding: 10px;
+    background: #212e4b;
+    padding: 20px 30px;
     margin: 20px 0 30px 0;
+    overflow: hidden;
     display: none;
-    
+}
+
+main #usuarios header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+#usuarios header .content-account {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 1rem;
 }
 
 #img-user {
     border-radius: 50%;
-    height: 200px
+    height: 150px;
+    width: 170px;
 }
 
-.infos-style {
-    font-size: 2rem;
-    font-weight: 550;
-    text-decoration: none;
+.content-account .name {
+    font-size: 23px;
 }
 
-/* @keyframes rotateLoading {
-    from {
-        transform: translateY(0);
-        transform: rotate(0);
+.content-account .username {
+    color: #1fa190;
+    font-size: 19px;
+    text-align: center;
+}
+
+.content-account .bio {
+    color: #ccc;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#usuarios .info-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 40px;
+    width: 100%;
+    background: #141C2F;
+}
+
+.info-account 
+.content-repos,
+.content-followers,
+.content-following {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+.info-account h2,
+.info-account p {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+#usuarios .content-links {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 80% 80%;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.content-links .links {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.links .url {
+    color: #1fa190;
+    border-bottom: 1px solid #1fa190;
+    padding: 2px;
+}
+
+.infos-style:not(.username) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 530px) {
+
+    #usuarios header {
+        display: flex;
+        flex-direction: column;
     }
 
-    to {
-        transform: translateY(5px);
-        transform: rotate(360deg);
+    main #usuarios header .name{
+        font-size: 30px;
+        text-align: center;
     }
-} */
+
+    #usuarios header .username {
+        font-size: 25px;
+    }
+
+    main #usuarios .info-account {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 2rem;
+    }
+
+    main #usuarios .info-account p,
+    .info-account h2 {
+        font-size: 25px;
+    }
+
+    main #usuarios .content-links {
+        display: grid;
+        max-width: 200px;
+    }
+
+}
